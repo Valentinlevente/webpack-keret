@@ -3,12 +3,46 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Kép szerkeztés</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    <p>This is a template</p>    
+<body class="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <h2 class="cimszo">
+                    Url:
+                </h2>
+                <input type="text" id="url" placeholder="Url...">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h2 class="cimszo">
+                    Szélesség:
+                </h2>
+                <input type="text" id="szelesseg" placeholder="Kép szélessége...">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h2 class="cimszo">
+                    Keret vastagsága:
+                </h2>
+                <input type="text" id="vastagsag" placeholder="Képkeret vastagsága...">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h2 class="cimszo">
+                    Keret színe:
+                </h2>
+                <input type="color" id="szin" value="000">
+            </div>
+            <div class="col-md-12" id="margin">
+                <img src="" id="kep">
+            </div>
+        </div>
+    </div>   
+    <footer>
+        <button id="darkmode">Light mode</button>   
+        <h3 id="signiture">Valentin Levente 14T</h3>
+    </footer>
     <script src='main.js'></script>
 </body>
 </html>
